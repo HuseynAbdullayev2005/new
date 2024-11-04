@@ -1,0 +1,143 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1500px;
+width: 100%;
+margin: 0 auto;
+padding: 0 32px;
+}
+
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+min-height: 80px;
+gap: 100px;
+}
+.navbar_text{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+.log_in_icon{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+
+
+video{
+    position: relative;
+    
+    width: 100%;
+   object-fit: cover;
+    height: 100vh;
+}
+
+.video_text{
+    position: absolute;
+   top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.video_text h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.video_text h1{
+    width: 100%;
+    font-size: 140px;
+    font-weight: bold;
+}
+.video_text p{
+    font-size: 30px;
+   font-weight: lighter;
+}
+
+.video_text button{
+    font-size: 20px;
+padding:10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about_me{
+    margin-top: 60px;
+    min-height: 60vh;
+    display: flex;
+    gap: 30px;
+}
+
+.about_me_text{
+    align-items: center;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 50px;
+}
+.about_me_text p{
+    font-size: 20px;
+}
+
+
+.about_me_text_button{
+    display: flex;
+    gap: 30px;
+}
+
+.about_me_text_button_one{
+    font-size: 20px;
+    padding:10px 20px;
+}
+
+.about_me_text_button_two{
+    font-size: 20px;
+    padding:10px 20px;
+}
+
+img{
+    display: block;
+ width: 75%;
+ min-width: 750px;
+}
