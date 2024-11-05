@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/scss/main.scss">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,22 +16,52 @@
 </head>
 
 <body>
+
     <nav>
-        <div class="navbar_text">
-            <h1>ALLAN JOHNSON</h1>
-            <p>Personal Life Coach</p>
-        </div>
-        <div class="navbar_right">
-            <ul class="navbar_list">
-                <li>About</li>
-                <li>Services</li>
-                <li>Plans</li>
-                <li>Blog</li>
-                <li>Guides</li>
-                <li>Contact</li>
+        <div class="navbar_hidden_click">
+            <p class="navbar_hidden_click_close">X</p>
+            <ul class="navbar_hidden_list">
+        
+                <li><a href="">About</a></li>
+                <hr>
+                <li><a href="">Services</a></li>
+                <hr>
+                <li><a href="">Plans</a></li>
+                <hr>
+                <li><a href="">Blog</a></li>
+                <hr>
+                <li><a href="">Guides</a></li>
+                <hr>
+                <li><a href="">Contact</a></li>
                 <li class="log_in_icon"><i class="fa-solid fa-user"></i>Log in</li>
             </ul>
         </div>
+
+        <div class="navbar">
+            <div class="navbar_text">
+                <h1>ALLAN JOHNSON</h1>
+                <p>Personal Life Coach</p>
+            </div>
+            <div class="navbar_right">
+                <ul class="navbar_list">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Plans</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Guides</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="log_in_icon"><i class="fa-solid fa-user"></i>Log in</li>
+                </ul>
+            </div>
+
+            <div class="navbar_hidden">
+                <div class="navbar_hidden_icon"><i class="fa-solid fa-bars"></i></div>
+
+            </div>
+
+        </div>
+       
+
     </nav>
 
     <main>
@@ -43,12 +73,15 @@
                     type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            <div class="container"></div>
-            <div class="video_text">
-                <h3>AMBITION IS THE FIRST STEP TOWARDS</h3>
-                <h1>SUCCESS</h1>
-                <p>Now Available for Online Coaching</p>
-                <button>Book Now</button>
+            <div class="container">
+
+
+                <div class="video_text">
+                    <h3>AMBITION IS THE FIRST STEP TOWARDS</h3>
+                    <h1>SUCCESS</h1>
+                    <p>Now Available for Online Coaching</p>
+                    <button class="btn_book">Book Now</button>
+                </div>
             </div>
         </section>
         <!--Video end-->
@@ -60,17 +93,19 @@
                 <div class="about_me">
                     <div class="about_me_text">
                         <h1>About ME</h1>
-                        <p>
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                            Text”
-                            or double click me to add your own content and make changes to the font. Feel free to drag
-                            and
-                            drop me anywhere you like on your page. ​</p>
-                        <p>This is a great space to write long text about your company and your services. You can use
-                            this
-                            space to go into a little more detail about your company. Talk about your team and what
-                            services
-                            you provide</p>
+                        <p><i>
+                                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
+                                “Edit
+                                Text”
+                                or double click me to add your own content and make changes to the font. Feel free to
+                                drag
+                                and
+                                drop me anywhere you like on your page.</i>​</p>
+                        <p><i>This is a great space to write long text about your company and your services. You can use
+                                this
+                                space to go into a little more detail about your company. Talk about your team and what
+                                services
+                                you provide</i></p>
                         <div class="about_me_text_button">
                             <button class="about_me_text_button_one">Read Me</button>
                             <button class="about_me_text_button_two">Free Consultation</button>
@@ -84,16 +119,170 @@
         </section>
         <!--About me end-->
 
-        <section>
+        <!--help start-->
+        <section id="help">
             <div class="container">
                 <div class="help">
-                    
+
+                    <div class="help_text">
+                        <h1>
+                            How I Can Help You
+                        </h1>
+                    </div>
+                    <div class="big_card">
+                        <div class="card">
+                            <div class="card_upper">
+                                <div class="card_head">
+                                    <h1>Free Consultation</h1>
+                                </div>
+                                <div class="card_use">
+                                    <p>Use this area to describe one of your services.</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="card_about">
+                                    <p>45 min</p>
+                                </div>
+                            </div>
+                            <div class="card_lower">
+                                <button>Book It</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_upper">
+                                <div class="card_head">
+                                    <h1>Free Consultation</h1>
+                                </div>
+                                <div class="card_use">
+                                    <p>Use this area to describe one of your services.</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="card_about">
+                                    <p>1 hr</p>
+                                    <p>45 min</p>
+                                </div>
+                            </div>
+                            <div class="card_lower">
+                                <button>Book It</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_upper">
+                                <div class="card_head">
+                                    <h1>Online Coaching</h1>
+                                </div>
+                                <div class="card_use">
+                                    <p>Use this area to describe one of your services.</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="card_about">
+                                    <p>Mon, Tue, Wed, Thu, Fri</p>
+                                    <p>1 hr</p>
+                                    <p>45 min</p>
+                                </div>
+                            </div>
+                            <div class="card_lower">
+                                <button>Book It</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more_services">
+                        <button class="more_services_btn">More Services</button>
+                    </div>
 
 
                 </div>
             </div>
+
         </section>
+        <!-- help end-->
+
+
+        <!--contact start-->
+        <section id="contact">
+            <div class="container">
+                <div class="contact">
+                    <div class="contact_text">
+                        <div class="contact_text_line"></div>
+                        <div class="contact_text_head">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="contact_text_adress">
+                            <p>500 Terry Francine Street,</p>
+                            <p>San Francisco, CA 94158</p>
+
+                        </div>
+                        <div class="contact_text_tel">
+                            <p>Tel: 123-456-7890</p>
+                            <p>Fax: 123-456-7890</p>
+
+                        </div>
+                        <div class="contact_text_email">
+                            <p>info@mysite.com</p>
+                        </div>
+                        <div class="contact_text_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="contact_text_about">
+                            <p>© 2035 by Personal Life Coach. Powered and secured by Wix</p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact_inputs">
+                        <div class="contact_inputs_full_name">
+                            <label for="first_name">firstName:</label>
+                            <input type="text" name="first_name">
+                            <label for="last_name">firstName:</label>
+                            <input type="text" name="last_name">
+                        </div>
+                        <div class="contact_inputs_email">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="contact_inputs_subject">
+                            <label for="subject">Subject:</label>
+                            <input type="text" name="subject">
+                        </div>
+                        <div class="contact_inputs_message">
+                            <label for="message">Message:</label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <div class="contact_inputs_button">
+                            <button class="contact_btn_submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--contact end-->
+
+
+
     </main>
+
+
+
+
+
+
+
+
+    <div class="lets_chat">
+        <i class="fa-solid fa-comment"></i>
+        <p>Let's Chat</p>
+    </div>
+    <div class="lets_chat_hidden">
+        <i class="fa-solid fa-comment"></i>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
