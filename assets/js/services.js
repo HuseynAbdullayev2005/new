@@ -9,42 +9,28 @@ const lets_chat = document.querySelector(".lets_chat");
 const lets_chat_hidden = document.querySelector(".lets_chat_hidden");
 const lets_chat_open = document.querySelector(".lets_chat_open");
 const lets_chat_close = document.querySelector(".lets_chat_close");
-const nav = document.querySelector("nav");
-const licontact = document.querySelector(".licontact");
-const liabout = document.querySelector(".liabout");
-
+const nav = document.querySelector("nav")
 
 menu_btn.addEventListener("click", function () {
     body.classList.add("stop");
     menu_hidden.classList.add("open_menu");
-    
-    licontact.addEventListener("click", function () {
-        console.log("basdin");
-        body.classList.remove("stop");
-        menu_hidden.classList.remove("open_menu");
-    })
-    close.addEventListener("click", function () {
-        body.classList.remove("stop");
-        menu_hidden.classList.remove("open_menu");
-    })
-    liabout.addEventListener("click", function () {
-        console.log("basdin");
-        body.classList.remove("stop");
-        menu_hidden.classList.remove("open_menu");
-    })
 })
 
 
+close.addEventListener("click", function () {
+    body.classList.remove("stop");
+    menu_hidden.classList.remove("open_menu");
+})
 
 
 loginicon.addEventListener("click", function () {
-    nav.style.display = "none"
+    nav.style.display="none"
     body.classList.add("stop");
     login.classList.add("login_open");
-    login_close.addEventListener("click", function () {
+    login_close.addEventListener("click",function () {
         body.classList.remove("stop");
-        login.classList.remove("login_open");
-        nav.style.display = "block";
+        login.classList.remove("login_open");  
+        nav.style.display="block";
     })
 
 
@@ -60,8 +46,6 @@ lets_chat.addEventListener("click", function () {
         lets_chat_open.classList.add("lets_chat_open");
         lets_chat.style.display = "flex"
     })
-
-
 })
 
 lets_chat_hidden.addEventListener("click", function () {
@@ -74,4 +58,3 @@ lets_chat_hidden.addEventListener("click", function () {
         lets_chat_hidden.style.display = "block"
     })
 })
-

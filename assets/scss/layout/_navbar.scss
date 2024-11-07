@@ -1,5 +1,5 @@
 nav {
-    padding: 50px 0px;
+
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -82,15 +82,61 @@ li {
     display: flex;
     gap: 5px;
 }
-@media only screen and (max-width: 1000px){
-.navbar_right {
+
+
+.login {
     display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 100%;
+    
+    
+
 }
 
-.navbar_hidden {
-    display: block;
+.login_open {
+    display: flex;
+    flex-direction: column;
 }
 
-.navbar_text p {
-    font-size: 20px;
-}}
+.login_text {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.login p {
+    text-align: end;
+}
+
+.login_text button {
+    background-color: black;
+    color: azure;
+    padding: 10px 20px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    /* navbar start */
+    .navbar_right {
+        display: none;
+    }
+
+    .navbar_hidden {
+        display: block;
+    }
+
+    .navbar_text p {
+        font-size: 20px;
+    }
+
+    /* navbar end */}
+    

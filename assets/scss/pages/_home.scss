@@ -1,6 +1,6 @@
-@import 'base/reset', 'layout/navbar';
 
 
+/* video start */
 video {
     position: relative;
 
@@ -20,6 +20,8 @@ video {
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+
 }
 
 .video_text h3 {
@@ -37,6 +39,9 @@ video {
     font-size: 30px;
     font-weight: lighter;
 }
+
+
+
 
 
 
@@ -122,11 +127,12 @@ img {
 
 /* about_me end */
 
-
 /* help start */
 #help {
     margin-top: 40px;
     background-image: url("https://static.wixstatic.com/media/5ae58bc939e44a8c8ac0dcafa8a5eb10.jpg/v1/fill/w_640,h_1730,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5ae58bc939e44a8c8ac0dcafa8a5eb10.jpg");
+    background-size: cover;
+    background-position: 100%;
 }
 
 .help {
@@ -207,132 +213,13 @@ img {
 
 /* help end */
 
-/* contact start */
-#contact {
-    background-color: aqua;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact_inputs {
-    width: 50%;
-    padding: 50px 0px;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-
-}
-
-.contact_inputs_full_name {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact_inputs_full_name input {
-    width: 100%;
-    min-height: 50px;
-    background-color: aqua;
-    border: 1px solid black;
-}
-
-.contact_inputs_email input {
-    width: 100%;
-    min-height: 50px;
-    background-color: aqua;
-    border: 1px solid black;
-}
-
-.contact_inputs_subject input {
-    background-color: aqua;
-    border: 1px solid black;
-    width: 100%;
-    min-height: 50px;
-}
-
-.contact_inputs_message textarea {
-    width: 100%;
-    background-color: aqua;
-    border: 1px solid black;
-}
-
-.contact_text_line {
-    background-color: black;
-    height: 2px;
-    width: 3%;
-}
-
-.contact_text {
-    padding: 50px 0px;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-
-
-}
-
-.contact_inputs_button {
-    display: flex;
-    justify-content: end;
-}
-
-.contact_btn_submit {
-    cursor: pointer;
-    padding: 10px 50px;
-    background-color: black;
-    color: white;
-}
-
-/* contact end */
-
-
-
-
-
-/* fixed start */
-.lets_chat {
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    gap: 20px;
-    background-color: black;
-    color: white;
-    padding: 20px 30px;
-    bottom: 0%;
-    right: 5%;
-
-}
-
-
-.lets_chat p {
-    font-size: 20px;
-}
-
-.lets_chat i {
-    font-size: 20px;
-}
-
-.lets_chat_hidden {
-    position: fixed;
-    bottom: 0%;
-    right: 5%;
-
-    display: none;
-}
-
-.lets_chat_hidden i {
-    border: 1px solid black;
-    border-radius: 100%;
-    color: white;
-    background-color: black;
-    padding: 20px;
-}
-
-/* fixed end */
 
 @media only screen and (max-width: 1000px) {
+
+
+
+
+    /* about_me start */
     .about_me {
         display: flex;
         flex-direction: column;
@@ -391,34 +278,15 @@ img {
     }
 
     .card {
-        width: 100%;
+        width: 80%;
+        margin: auto;
 
     }
 
 
     /* help end */
 
-    /* contact start */
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact_inputs {
-        width: 100%;
-    }
-
-    /* contact end */
 
 
-    /* fixed start */
-    .lets_chat_hidden {
-        display: block;
-    }
 
-    .lets_chat {
-        display: none;
-    }
-
-    /* fixed end */
 }

@@ -1,0 +1,176 @@
+* {
+    font-family:sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+html {
+    scroll-padding-top:250px;
+    scroll-behavior: smooth;
+}
+
+/* navbar start */
+nav {
+    padding: 50px 0px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    min-height: 80px;
+    gap: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.navbar_text {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.stop {
+
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar_hidden {
+
+    display: none;
+}
+
+.navbar_hidden_click {
+
+    display: none;
+}
+
+.navbar_hidden_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+.navbar_hidden_click_close {
+    text-align: end;
+}
+
+.open_menu {
+
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.log_in_icon {
+    display: flex;
+    gap: 5px;
+}
+
+/* navbar end */
+
+
+
+
+
+
+/* login start */
+
+.login {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 100%;
+    
+    
+
+}
+
+.login_open {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_text {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.login p {
+    text-align: end;
+}
+
+.login_text button {
+    background-color: black;
+    color: azure;
+    padding: 10px 20px;
+}
+
+/* login end */
+
+@media only screen and (max-width: 1000px) {
+
+    /* navbar start */
+    .navbar_right {
+        display: none;
+    }
+
+    .navbar_hidden {
+        display: block;
+    }
+
+    .navbar_text p {
+        font-size: 20px;
+    }
+
+    /* navbar end */
+}

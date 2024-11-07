@@ -18,6 +18,7 @@ a {
 }
 
 html {
+    scroll-padding-top:250px;
     scroll-behavior: smooth;
 }
 

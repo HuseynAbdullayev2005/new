@@ -1,0 +1,86 @@
+.line{
+   width: 5%;
+   height: 2px;
+}
+
+.services_list_elements{
+    display: flex;
+}
+.services{
+    padding: 50px 0px;
+    
+   
+}
+.services_text{
+    font-size: 60px;
+}
+.services_list{
+    display: flex;
+ margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.services_big_card {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.services_card {
+    width: calc(27% - 30px);
+    padding: 20px 20px;
+    border: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+    min-height: 35vh;
+    justify-content: space-between;
+}
+
+
+.services_card_upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.services_card_lower {
+    display: flex;
+    justify-content: center;
+
+}
+#services{
+    background-image: url("https://static.wixstatic.com/media/5ae58bc939e44a8c8ac0dcafa8a5eb10.jpg/v1/fill/w_640,h_1730,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5ae58bc939e44a8c8ac0dcafa8a5eb10.jpg");
+    background-size: cover;
+    background-position: 100%;
+    margin-top: 80px;
+}
+.services_card_lower button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.services_card_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+    .services_card{
+        width: calc(40% - 30px);
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .services_card{
+        width: calc(80% - 30px);
+    }
+  }
